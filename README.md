@@ -1,11 +1,11 @@
 # g12hub
-G12 HUB is a scalable ecosystem designed to train, equip, and empower holistic leaders. Built on 5 core pillars—Leadership, Skills, Character, Purpose, and Finances—this repository houses the responsive web platform engineered to drive exponential community impact and structural change. Building Men, Building Systems.
+G12 Institute is a scalable ecosystem designed to train, equip, and empower holistic leaders. Built on 5 core pillars—Leadership, Skills, Character, Purpose, and Finances—this repository houses the responsive web platform engineered to drive exponential community impact and structural change. Building Men, Building Systems.
 
 
 
-# G12 HUB — Building Men, Building Systems
+# G12 Institute — Building Men, Building Systems
 
- G12 Hub is a structured, scalable ecosystem engineered to train, equip, and empower holistic change-makers. Built to scale via a compounding network model ($1 \rightarrow 12 \rightarrow 144$), this platform acts as the digital architecture anchoring the movement across its social, economic, and spiritual pillars.
+ G12 Institute is a structured, scalable ecosystem engineered to train, equip, and empower holistic change-makers. Built to scale via a compounding network model ($1 \rightarrow 12 \rightarrow 144$), this platform acts as the digital architecture anchoring the movement across its social, economic, and spiritual pillars.
 
 ---
 

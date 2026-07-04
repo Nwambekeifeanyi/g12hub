@@ -4,286 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>G12 HUB | Leadership Development & System Multiplication</title>
-    <meta name="description" content="G12 Hub builds capacity-driven men and sustainable systems. Explore our 5 pillars: Leadership Development, Skill Building, Character, Purpose Alignment, and Financial Growth.">
-    <meta name="keywords" content="G12 Hub, leadership training, capacity building, ethical leadership, digital skills development, financial development, mentorship network, personal growth system">
+    <title>G12 Institute | Leadership Development & System Multiplication</title>
+    <meta name="description" content="G12 Institute builds capacity-driven men and sustainable systems. Explore our 5 pillars: Leadership Development, Skill Building, Character, Purpose Alignment, and Financial Growth.">
+    <meta name="keywords" content="G12 Institute, leadership training, capacity building, ethical leadership, digital skills development, financial development, mentorship network, personal growth system">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="G12 Hub">
-    <!-- <link rel="canonical" href="https://www.g12hub.org/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.g12hub.org/">
-    <meta property="og:title" content="G12 HUB | Building Men, Building Systems">
-    <meta property="og:description" content="Join a structured ecosystem designed to train, equip, and empower holistic change-makers. Experience lasting social, economic, and spiritual impact.">
-    <meta property="og:image" content="https://www.g12hub.org/assets/images/og-main-banner.jpg"> -->
-
-    <!-- <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.g12hub.org/">
-    <meta property="twitter:title" content="G12 HUB | Building Men, Building Systems">
-    <meta property="twitter:description" content="Join a structured ecosystem designed to train, equip, and empower holistic change-makers. Experience lasting social, economic, and spiritual impact.">
-    <meta property="twitter:image" content="https://www.g12hub.org/assets/images/og-main-banner.jpg"> -->
-
+    <meta name="author" content="G12 Institute">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
+        :root {
+            /* --- Core Brand Colors --- */
+            --brand-black: #0B0F19;       /* Deep slate-tinted absolute black */
+            --brand-yellow: #FACC15;      /* Vibrant, accessible core yellow */
+            --brand-yellow-hover: #EAB308;/* Deepened gold-yellow for interactive hover states */
+            
+            /* --- Derived Structural Layout Tones --- */
+            --bg-dark: #0B0F19;           
+            --bg-light: #F8FAFC;          
+            --text-primary: #1E293B;      
+            --text-muted: #64748B;        
+        }
+
         html { scroll-behavior: smooth; }
         html, body {
             overflow-x: hidden;
             width: 100%;
             position: relative;
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-            -webkit-text-fill-color: transparent;
-        }
+
+        /* Custom utility extensions utilizing native CSS variables */
+        .bg-brand-black { bg: var(--brand-black); }
+        .text-brand-yellow { color: var(--brand-yellow); }
+        .bg-brand-yellow { background-color: var(--brand-yellow); }
+        .hover\:bg-brand-yellow-hover:hover { background-color: var(--brand-yellow-hover); }
+
         /* Prevents content flashing before AOS initializes */
         [data-aos] { pointer-events: none; }
         body.aos-initialized [data-aos] { pointer-events: auto; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 font-sans overflow-x-hidden">
 
-    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-900 shadow-lg z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-black tracking-wider text-blue-900">G12 <span class="text-blue-600">HUB</span></span>
+                    <span class="text-2xl font-black tracking-wider text-white">G12 <span class="text-amber-400">Institute</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">Our Mission</a>
-                    <a href="#pillars" class="text-gray-600 hover:text-blue-600 transition">Key Pillars</a>
-                    <a href="#system" class="text-gray-600 hover:text-blue-600 transition">The System</a>
-                    <a href="#impact" class="text-gray-600 hover:text-blue-600 transition">Impact & Goals</a>
+                    <a href="#home" class="text-slate-300 hover:text-amber-400 transition">Home</a>
+                    <a href="#about" class="text-slate-300 hover:text-amber-400 transition">Our Mission</a>
+                    <a href="#pillars" class="text-slate-300 hover:text-amber-400 transition">Key Pillars</a>
+                    <a href="#system" class="text-slate-300 hover:text-amber-400 transition">The System</a>
+                    <a href="#impact" class="text-slate-300 hover:text-amber-400 transition">Impact & Goals</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="#join" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition transform hover:scale-105 shadow-md">Join the System</a>
+                    <a href="#join" class="bg-amber-400 text-slate-950 px-6 py-2.5 rounded-full font-bold hover:bg-amber-500 transition transform hover:scale-105 shadow-md">Join the System</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 focus:outline-none text-2xl">
+                    <button id="mobile-menu-btn" class="text-slate-300 focus:outline-none text-2xl">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
-            <a href="#home" class="block text-gray-600 py-2 font-medium">Home</a>
-            <a href="#about" class="block text-gray-600 py-2 font-medium">Our Mission</a>
-            <a href="#pillars" class="block text-gray-600 py-2 font-medium">Key Pillars</a>
-            <a href="#system" class="block text-gray-600 py-2 font-medium">The System</a>
-            <a href="#impact" class="block text-gray-600 py-2 font-medium">Impact & Goals</a>
-            <a href="#join" class="block text-center bg-blue-600 text-white py-2.5 rounded-md font-semibold">Join the System</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-slate-900 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Home</a>
+            <a href="#about" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Our Mission</a>
+            <a href="#pillars" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Key Pillars</a>
+            <a href="#system" class="block text-slate-300 py-2 font-medium hover:text-amber-400">The System</a>
+            <a href="#impact" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Impact & Goals</a>
+            <a href="#join" class="block text-center bg-amber-400 text-slate-950 py-2.5 rounded-md font-bold">Join the System</a>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span data-aos="fade-down" class="inline-block bg-blue-500/20 text-blue-300 border border-blue-500/30 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
+            <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
                 Our Identity: Building Men, Building Systems
             </span>
             <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
-                We Don't Just Inspire People. <br><span class="text-blue-400">We Structure Them.</span>
+                We Don't Just Inspire People. <br><span class="text-amber-400">We Structure Them.</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light">
-                G12 Hub exists to build men and build systems that outlive individuals—creating lasting social, economic, and spiritual transformation.
+            <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-light">
+                G12 Institute exists to build men and build systems that outlive individuals—creating lasting social, economic, and spiritual transformation.
             </p>
             <div data-aos="fade-up" data-aos-delay="300" class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#join" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition transform hover:-translate-y-1 text-center">Become a Change-Maker</a>
-                <a href="#about" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center">Explore Our Vision</a>
+                <a href="#join" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-slate-950 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition transform hover:-translate-y-1 text-center">Become a Change-Maker</a>
+                <a href="#about" class="w-full sm:w-auto bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center">Explore Our Vision</a>
             </div>
         </div>
     </section>
 
-    <section class="bg-blue-600 py-8 text-white">
+    <!-- Countdown Bar Banner -->
+    <section class="bg-amber-400 py-8 text-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div class="text-center lg:text-left" data-aos="fade-right">
-                <h3 class="text-2xl font-bold">Next Major Training Cohort</h3>
-                <p class="text-blue-100 text-sm mt-1">Targeting 600 individuals for holistic capacity building.</p>
+                <h3 class="text-2xl font-black tracking-tight">Next Major Training Cohort</h3>
+                <p class="text-slate-800 text-sm mt-1 font-medium">Targeting 600 individuals for holistic capacity building.</p>
             </div>
             <div class="flex gap-4 sm:gap-6" data-aos="fade-left">
-                <div class="flex flex-col items-center bg-blue-700/50 rounded-lg px-4 py-3 min-w-[70px]">
-                    <span id="days" class="text-2xl sm:text-3xl font-black">00</span>
-                    <span class="text-xs text-blue-200 uppercase tracking-wider font-semibold mt-1">Days</span>
+                <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
+                    <span id="days" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Days</span>
                 </div>
-                <div class="flex flex-col items-center bg-blue-700/50 rounded-lg px-4 py-3 min-w-[70px]">
-                    <span id="hours" class="text-2xl sm:text-3xl font-black">00</span>
-                    <span class="text-xs text-blue-200 uppercase tracking-wider font-semibold mt-1">Hours</span>
+                <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
+                    <span id="hours" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Hours</span>
                 </div>
-                <div class="flex flex-col items-center bg-blue-700/50 rounded-lg px-4 py-3 min-w-[70px]">
-                    <span id="minutes" class="text-2xl sm:text-3xl font-black">00</span>
-                    <span class="text-xs text-blue-200 uppercase tracking-wider font-semibold mt-1">Mins</span>
+                <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
+                    <span id="minutes" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Mins</span>
                 </div>
-                <div class="flex flex-col items-center bg-blue-700/50 rounded-lg px-4 py-3 min-w-[70px]">
-                    <span id="seconds" class="text-2xl sm:text-3xl font-black">00</span>
-                    <span class="text-xs text-blue-200 uppercase tracking-wider font-semibold mt-1">Secs</span>
+                <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
+                    <span id="seconds" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Secs</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Mission Framework Cards -->
     <section id="about" class="py-20 lg:py-28 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-blue-600">Daily Mission</h2>
-            <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-950">How We Train, Equip, & Empower</p>
+            <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">Daily Mission</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">How We Train, Equip, & Empower</p>
             
             <div class="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4">
-                <div data-aos="zoom-in" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-book"></i></div>
-                    <h4 class="font-bold text-gray-900">Education</h4>
+                <div data-aos="zoom-in" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-book"></i></div>
+                    <h4 class="font-bold text-slate-900">Education</h4>
                 </div>
-                <div data-aos="zoom-in" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-gears"></i></div>
-                    <h4 class="font-bold text-gray-900">Skill Dev</h4>
+                <div data-aos="zoom-in" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-gears"></i></div>
+                    <h4 class="font-bold text-slate-900">Skill Dev</h4>
                 </div>
-                <div data-aos="zoom-in" data-aos-delay="300" class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="font-bold text-gray-900">Character</h4>
+                <div data-aos="zoom-in" data-aos-delay="300" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="font-bold text-slate-900">Character</h4>
                 </div>
-                <div data-aos="zoom-in" data-aos-delay="400" class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-compass"></i></div>
-                    <h4 class="font-bold text-gray-900">Spiritual</h4>
+                <div data-aos="zoom-in" data-aos-delay="400" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-compass"></i></div>
+                    <h4 class="font-bold text-slate-900">Spiritual</h4>
                 </div>
-                <div data-aos="zoom-in" data-aos-delay="500" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 col-span-2 md:col-span-1">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-wallet"></i></div>
-                    <h4 class="font-bold text-gray-900">Financial</h4>
+                <div data-aos="zoom-in" data-aos-delay="500" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300 col-span-2 md:col-span-1">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-wallet"></i></div>
+                    <h4 class="font-bold text-slate-900">Financial</h4>
                 </div>
             </div>
 
-            <div data-aos="fade-up" class="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
-                <div class="absolute -right-8 -bottom-8 text-blue-100/40 text-9xl pointer-events-none"><i class="fa-solid fa-quote-right"></i></div>
-                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-600 mb-3">Our Ultimate Litmus Test</h3>
-                <p class="text-xl sm:text-2xl font-semibold text-slate-900 italic max-w-3xl mx-auto">
+            <div data-aos="fade-up" class="mt-16 bg-slate-950 border border-slate-900 rounded-3xl p-8 sm:p-12 relative overflow-hidden text-left">
+                <div class="absolute -right-8 -bottom-8 text-slate-900 text-9xl pointer-events-none"><i class="fa-solid fa-quote-right"></i></div>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-3">Our Ultimate Litmus Test</h3>
+                <p class="text-xl sm:text-2xl font-semibold text-white italic max-w-3xl">
                     “Will this produce a leader who can influence and transform others?”
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="pillars" class="py-20 bg-slate-50 border-t border-b border-slate-100">
+    <!-- Architecture Pillars -->
+    <section id="pillars" class="py-20 bg-slate-900 border-t border-b border-slate-950 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-blue-600">Core Architecture</h2>
-                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-950">The 5 Pillars We Focus On</p>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-400">Core Architecture</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">The 5 Pillars We Focus On</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div data-aos="fade-up" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">1</div>
-                    <h3 class="text-xl font-bold text-gray-950 mb-3">Leadership Development</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Teach practical leadership including strategic decision-making, taking structural responsibility, and expanding real influence. We intentionally raise leaders who can direct high-performing teams, not just govern themselves.</p>
+                <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">1</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Leadership Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Teach practical leadership including strategic decision-making, taking structural responsibility, and expanding real influence. We intentionally raise leaders who can direct high-performing teams, not just govern themselves.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">2</div>
-                    <h3 class="text-xl font-bold text-gray-950 mb-3">Skill & Capacity Building</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Equipping you with market-relevant digital capabilities, business acumen, robust communication, and advanced problem-solving mechanics. Our rigid focus remains on income-generating and impact-driven execution skills.</p>
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Skill & Capacity Building</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Equipping you with market-relevant digital capabilities, business acumen, robust communication, and advanced problem-solving mechanics. Our rigid focus remains on income-generating and impact-driven execution skills.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">3</div>
-                    <h3 class="text-xl font-bold text-gray-950 mb-3">Character & Values</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Instilling absolute integrity, personal discipline, unwavering consistency, and radical peer accountability. We form dependable, concrete human assets who can be trusted safely with massive cultural and corporate influence.</p>
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">3</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Character & Values</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Instilling absolute integrity, personal discipline, unwavering consistency, and radical peer accountability. We form dependable, concrete human assets who can be trusted safely with massive cultural and corporate influence.</p>
                 </div>
-                <div data-aos="fade-up" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">4</div>
-                    <h3 class="text-xl font-bold text-gray-950 mb-3">Spiritual & Purpose Alignment</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Systematically helping individuals unpack, locate, and align with their true assignment. We dedicate resources to constructing deep inner spiritual strength, enduring existential clarity, and clear long-term direction.</p>
+                <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">4</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spiritual & Purpose Alignment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Systematically helping individuals unpack, locate, and align with their true assignment. We dedicate resources to constructing deep inner spiritual strength, enduring existential clarity, and clear long-term direction.</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition md:col-span-2 lg:col-span-1">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">5</div>
-                    <h3 class="text-xl font-bold text-gray-950 mb-3">Financial Development</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Demystifying wealth creation, operational management, and scalable multiplication systems. Ensuring leaders possess the strong economic foundation needed to resource systemic transformations securely.</p>
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group md:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">5</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Financial Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Demystifying wealth creation, operational management, and scalable multiplication systems. Ensuring leaders possess the strong economic foundation needed to resource systemic transformations securely.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- The Multiplication Matrix Step Line -->
     <section id="system" class="py-20 lg:py-28 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-blue-600">The Network Effect</h2>
-                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-950">How the G12 Matrix Multiplies</p>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">The Network Effect</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">How the G12 Matrix Multiplies</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 relative items-center">
-                
-                <div data-aos="fade-right" class="bg-slate-900 text-white p-8 rounded-2xl text-center relative shadow-xl">
-                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center border-4 border-white font-bold">1</div>
+                <div data-aos="fade-right" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-900">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">1</div>
                     <h4 class="text-lg font-bold mt-2">1 Person Trained</h4>
                     <p class="text-slate-400 text-xs mt-2">Enters the ecosystem to undergo holistic framework acceleration.</p>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="100" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl">
-                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center border-4 border-white font-bold">2</div>
+                <div data-aos="fade-right" data-aos-delay="100" class="bg-slate-900 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-800">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">2</div>
                     <h4 class="text-lg font-bold mt-2">Becomes a Leader</h4>
                     <p class="text-slate-400 text-xs mt-2">Internalizes values, achieves high competence, moves to execute.</p>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="200" class="bg-slate-900 text-white p-8 rounded-2xl text-center relative shadow-xl">
-                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center border-4 border-white font-bold">3</div>
+                <div data-aos="fade-right" data-aos-delay="200" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-900">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">3</div>
                     <h4 class="text-lg font-bold mt-2">Leads Others (G12+)</h4>
                     <p class="text-slate-400 text-xs mt-2">Structures, guides, and deploys a custom unit of 12 or more people.</p>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="300" class="bg-blue-900 text-white p-8 rounded-2xl text-center relative shadow-xl border-2 border-blue-500">
-                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center border-4 border-white font-bold"><i class="fa-solid fa-arrows-spin"></i></div>
-                    <h4 class="text-lg font-bold mt-2">Infinite Ripple Effect</h4>
-                    <p class="text-blue-200 text-xs mt-2">The system scales exponentially. Compound societal transformation occurs.</p>
+                <div data-aos="fade-right" data-aos-delay="300" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border-2 border-amber-400">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md"><i class="fa-solid fa-arrows-spin"></i></div>
+                    <h4 class="text-lg font-bold mt-2 text-amber-400">Infinite Ripple Effect</h4>
+                    <p class="text-slate-300 text-xs mt-2">The system scales exponentially. Compound societal transformation occurs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="impact" class="py-20 bg-slate-900 text-white">
+    <!-- Metric Progress & Engine Cadence -->
+    <section id="impact" class="py-20 bg-slate-950 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 
                 <div data-aos="fade-right">
-                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Clear Metric Anchors</span>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Clear Metric Anchors</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-8">What We Measure & Track</h2>
                     
                     <div class="space-y-6">
-                        <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/50">
-                            <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Every 6 Months</span>
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Every 6 Months</span>
                             <div class="flex items-baseline gap-2 mt-1">
                                 <span class="text-3xl font-black text-white">600</span>
-                                <span class="text-slate-300 text-sm font-medium">Individuals fully equipped</span>
+                                <span class="text-slate-400 text-sm font-medium">Individuals fully equipped</span>
                             </div>
-                            <p class="text-slate-400 text-xs mt-2">Ensuring a strict minimum baseline of 70% are actively mapping and applying data modules live within their industries.</p>
+                            <p class="text-slate-500 text-xs mt-2">Ensuring a strict minimum baseline of 70% are actively mapping and applying data modules live within their industries.</p>
                         </div>
 
-                        <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/50">
-                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Every 12 Months</span>
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Every 12 Months</span>
                             <div class="flex items-baseline gap-2 mt-1">
                                 <span class="text-3xl font-black text-white">1,000+</span>
-                                <span class="text-slate-300 text-sm font-medium">Reached & Activated</span>
+                                <span class="text-slate-400 text-sm font-medium">Reached & Activated</span>
                             </div>
-                            <p class="text-slate-400 text-xs mt-2">Raising 200 high-performance organic change-makers and deploying live micro-impact projects across localized environments.</p>
+                            <p class="text-slate-500 text-xs mt-2">Raising 200 high-performance organic change-makers and deploying live micro-impact projects across localized environments.</p>
                         </div>
                     </div>
                 </div>
 
                 <div data-aos="fade-left">
-                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Operational Blueprint</span>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Operational Blueprint</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-8">Execution Engine</h2>
 
-                    <div class="relative border-l-2 border-slate-700 ml-4 space-y-8">
+                    <div class="relative border-l-2 border-slate-800 ml-4 space-y-8">
                         <div class="relative pl-8">
-                            <div class="absolute -left-2 top-1.5 w-4 h-4 rounded-full bg-blue-500 shadow-md"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Weekly Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Small group accountability circles, rigorous applied-skill worklabs (online & offline match formats), and personal health/mindset tracking checks.</p>
                         </div>
 
                         <div class="relative pl-8">
-                            <div class="absolute -left-2 top-1.5 w-4 h-4 rounded-full bg-indigo-500 shadow-md"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-500 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Monthly Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Advanced management simulation sessions, dynamic guest speaker/executive mentor strategy meetings, and real-world project deadlines.</p>
                         </div>
 
                         <div class="relative pl-8">
-                            <div class="absolute -left-2 top-1.5 w-4 h-4 rounded-full bg-emerald-500 shadow-md"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Semi-Annual Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Launch major training cohorts (600 base load), extract clean metrics analytics data, and execute structural promotions for new leaders.</p>
                         </div>
@@ -294,44 +302,45 @@
         </div>
     </section>
 
+    <!-- Shifts and Outcomes Forced Section -->
     <section class="py-20 lg:py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-blue-600">Future Landscape</h2>
-                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-950">The Tangible Shifts We Are Forcing</p>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">Future Landscape</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">The Tangible Shifts We Are Forcing</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div data-aos="fade-up" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
-                    <span class="text-blue-600 text-xl bg-blue-100 p-3 rounded-xl"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <div data-aos="fade-up" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-arrow-trend-up"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Self-Reliant Youth</h4>
                         <p class="text-xs text-slate-500 mt-1">Decisive generation taking active economic control through deep skills.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="50" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
-                    <span class="text-blue-600 text-xl bg-blue-100 p-3 rounded-xl"><i class="fa-solid fa-city"></i></span>
+                <div data-aos="fade-up" data-aos-delay="50" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-city"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Economic Lift</h4>
                         <p class="text-xs text-slate-500 mt-1">Localized micro-ecosystems directly upgrading production, scaling output.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
-                    <span class="text-blue-600 text-xl bg-blue-100 p-3 rounded-xl"><i class="fa-solid fa-scale-balanced"></i></span>
+                <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-scale-balanced"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Ethical Leadership</h4>
                         <p class="text-xs text-slate-500 mt-1">A generation that views values as non-negotiable standard foundations.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="150" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4">
-                    <span class="text-blue-600 text-xl bg-blue-100 p-3 rounded-xl"><i class="fa-solid fa-eye"></i></span>
+                <div data-aos="fade-up" data-aos-delay="150" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-eye"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Clarity of Purpose</h4>
                         <p class="text-xs text-slate-500 mt-1">Eliminating existential wandering; converting time into high-impact value.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 md:col-span-2 lg:col-span-1">
-                    <span class="text-blue-600 text-xl bg-blue-100 p-3 rounded-xl"><i class="fa-solid fa-heart-circle-check"></i></span>
+                <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all md:col-span-2 lg:col-span-1">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-heart-circle-check"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Social Optimization</h4>
                         <p class="text-xs text-slate-500 mt-1">Drastic natural reduction of structural friction through value-based choices.</p>
@@ -341,25 +350,99 @@
         </div>
     </section>
 
-    <section id="join" class="py-20 bg-gradient-to-br from-blue-950 to-slate-950 text-white relative overflow-hidden">
+    <!-- About the Founder Section -->
+    <section id="founder" class="py-20 lg:py-28 bg-slate-50 border-t border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Founder Image Frame Wrapper (Isolated Constraint) -->
+                <div class="lg:col-span-5 flex justify-center w-full" data-aos="fade-right">
+                    <div class="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-slate-200 group border-4 border-slate-950">
+                        <!-- Replace src path with your hosting asset string -->
+                        <img 
+                            src="./image/image.jpeg" 
+                            alt="Chukwu Joshua Chukwuebuka - Founder of G12 Institute" 
+                            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
+                            loading="lazy"
+                        >
+                        <!-- Decorative Branding Core Accent Overlays -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 bg-slate-950/80 backdrop-blur-md border border-slate-800 rounded-2xl p-4 text-white hidden sm:block">
+                            <p class="text-[11px] uppercase tracking-widest text-amber-400 font-bold mb-0.5">Core Philosophy</p>
+                            <p class="text-xs italic font-medium text-slate-200">"Leadership is a responsibility to serve, empower, and inspire others."[cite: 1]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder Profile Bio Text Block -->
+                <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+                    <div>
+                        <span class="inline-block bg-slate-950 text-amber-400 border border-slate-900 rounded-full px-4 py-1 text-xs font-bold uppercase tracking-wider mb-3">
+                            The Visionary
+                        </span>
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-950 tracking-tight leading-snug">
+                            Chukwu Joshua Chukwuebuka[cite: 1]
+                        </h2>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1">
+                            <p class="text-base font-bold text-amber-500">
+                                Founder, G12 Institute[cite: 1]
+                            </p>
+                            <span class="hidden sm:inline text-slate-300">|</span>
+                            <a href="tel:09035466348" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-500 transition w-fit">
+                                <i class="fa-solid fa-phone text-xs opacity-70"></i>
+                                09035466348
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-4 font-light">
+                        <p>
+                            Chukwu Joshua Chukwuebuka is a leadership strategist, transformational speaker, and purpose-driven mentor dedicated to raising a generation of individuals who lead with integrity, excellence, and impact[cite: 1]. He is the founder of the <span class="font-semibold text-slate-900">G12 Institute</span>, a leadership and human development organization committed to equipping people with the knowledge, character, and practical skills needed to thrive in every area of life[cite: 1].
+                        </p>
+                        <p>
+                            With a deep passion for leadership, identity, purpose, and personal transformation, Joshua has devoted his life to helping individuals discover their God-given potential, overcome limitations, and become influential leaders in their families, communities, careers, and nations[cite: 1].
+                        </p>
+                        <p>
+                            Through the G12 Institute, he champions a holistic approach to human development built on five core pillars: <span class="font-medium text-slate-950">Kingdom Development, Leadership Development, Financial Development, Capacity Building, and Personal Development</span>[cite: 1]. His teaching emphasizes that true success is achieved when the spirit, soul, and body are intentionally developed and aligned with purpose[cite: 1].
+                        </p>
+                        <p>
+                            Joshua is known for his practical, thought-provoking, and inspiring approach to teaching[cite: 1]. His vision is to build a community of purpose-driven leaders who will influence society with wisdom, competence, and godly values, creating lasting transformation across generations[cite: 1].
+                        </p>
+                    </div>
+
+                    <!-- Micro Quote Hook Callout Block -->
+                    <div class="pt-4 border-t border-slate-200/80 flex items-start gap-3">
+                        <span class="text-amber-500 text-xl pt-1"><i class="fa-solid fa-quote-left opacity-40"></i></span>
+                        <p class="text-xs sm:text-sm italic font-medium text-slate-700 leading-relaxed">
+                            He believes that leadership is not merely a position but a responsibility to serve, empower, and inspire others to become the best versions of themselves[cite: 1].
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration & Integration Forms -->
+    <section id="join" class="py-20 bg-gradient-to-br from-slate-950 to-slate-900 text-white relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 data-aos="fade-up" class="text-3xl sm:text-5xl font-black">G12 Hub is not something you join—it is something you become.</h2>
-            <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-slate-300 max-w-xl mx-auto text-sm sm:text-base">
+            <h2 data-aos="fade-up" class="text-3xl sm:text-5xl font-black text-white">G12 Institute is not something you join—it is something you become.</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
                 Position yourself to build systems that will transform your own reality, giving you leverage to duplicate that transformation onto others.
             </p>
 
-            <form data-aos="fade-up" data-aos-delay="200" class="mt-12 bg-white p-4 sm:p-6 rounded-2xl shadow-2xl max-w-md mx-auto text-gray-900 flex flex-col gap-4 text-left">
+            <form data-aos="fade-up" data-aos-delay="200" class="mt-12 bg-white p-4 sm:p-6 rounded-2xl shadow-2xl max-w-md mx-auto text-gray-900 flex flex-col gap-4 text-left border border-slate-100">
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
-                    <input type="text" placeholder="John Doe" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500" required>
+                    <input type="text" placeholder="John Doe" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-amber-400" required>
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
-                    <input type="email" placeholder="john@example.com" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500" required>
+                    <input type="email" placeholder="john@example.com" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-amber-400" required>
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Primary Pillar Focus Interest</label>
-                    <select class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:border-blue-500">
+                    <select class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:border-amber-400">
                         <option>Leadership Development</option>
                         <option>Skill & Capacity Building</option>
                         <option>Character & Values</option>
@@ -367,33 +450,34 @@
                         <option>Financial Development</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-3 rounded-lg uppercase tracking-wide mt-2 transition">Initiate Integration</button>
+                <button type="submit" class="w-full bg-slate-950 hover:bg-slate-900 text-amber-400 text-sm font-bold py-3 rounded-lg uppercase tracking-wide mt-2 transition shadow-md">Initiate Integration</button>
             </form>
         </div>
     </section>
 
+    <!-- Structural Layout Footer -->
     <footer class="bg-slate-950 text-slate-500 text-xs py-12 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
-                <span class="text-base font-black tracking-wider text-white">G12 <span class="text-blue-500">HUB</span></span>
-                <p class="mt-1 text-[11px] text-slate-100">Building Men, Building Systems. &copy; 2026. All Rights Reserved.</p>
+                <span class="text-base font-black tracking-wider text-white">G12 <span class="text-amber-400">Institute</span></span>
+                <p class="mt-1 text-[11px] text-slate-400">Building Men, Building Systems. &copy; 2026. All Rights Reserved.</p>
             </div>
             <div class="flex space-x-6 text-sm">
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Initialize Animate On Scroll (Configure both directions explicitly)
+        // Initialize Animate On Scroll
         AOS.init({
             duration: 800,
-            once: false, // Forces animations to fire both when scrolling down and back up
-            mirror: true, // Tells elements to animate out while scrolling past them
+            once: false, 
+            mirror: true, 
             offset: 50
         });
 
@@ -405,7 +489,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on clicking links
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -414,7 +497,6 @@
 
         // 6-Month Targeted Cohort Countdown Timer Logic
         function startCountdown() {
-            // Set programmatic target date to 45 days in the future for simulation
             const targetDate = new Date();
             targetDate.setDate(targetDate.getDate() + 45);
 
