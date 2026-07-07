@@ -15,20 +15,19 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
-       :root {
-    /* --- Core Brand Colors --- */
-    --brand-black: #0B0F19;        /* Deep slate-tinted absolute black */
-    --brand-yellow: #292403;       /* Vibrant, accessible core yellow */
-    --brand-yellow-hover: #EAB308; /* Deepened gold-yellow for interactive hover states */
-    --brand-white: #FFFFFF;        /* Absolute, crisp brand brilliant white */
-    
-    /* --- Derived Structural Layout Tones --- */
-    --bg-dark: var(--brand-black); 
-    --bg-light: var(--brand-white);/* Now directly inherits the core white asset */
-    --bg-neutral: #F8FAFC;         /* Off-white canvas tone for layout grouping */
-    --text-primary: #1E293B;      
-    --text-muted: #64748B;        
-}
+        :root {
+            /* --- Core Brand Colors --- */
+            --brand-black: #0B0F19;       /* Deep slate-tinted absolute black */
+            --brand-yellow: #FACC15;      /* Vibrant, accessible core yellow */
+            --brand-yellow-hover: #EAB308;/* Deepened gold-yellow for interactive hover states */
+            
+            /* --- Derived Structural Layout Tones --- */
+            --bg-dark: #0B0F19;           
+            --bg-light: #F8FAFC;          
+            --text-primary: #1E293B;      
+            --text-muted: #64748B;        
+        }
+
         html { scroll-behavior: smooth; }
         html, body {
             overflow-x: hidden;
@@ -84,22 +83,10 @@
     </nav>
 
     <!-- Hero Section -->
-   <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            
-           <div data-aos="fade-down" class="flex justify-center mb-6">
-    <div class="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden rounded-full">
-        <img 
-            src="./image/logo.jpeg" 
-            alt="G12 Institute Logo" 
-            class="w-full h-full object-contain rounded-full"
-            loading="eager"
-        >
-    </div>
-</div>
-
-            <span data-aos="fade-down" data-aos-delay="50" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
+            <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
                 Our Identity: Building Men, Building Systems
             </span>
             <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
@@ -143,120 +130,44 @@
         </div>
     </section>
 
-
-     <!-- Mission Framework Cards -->
-    <section id="about" class="py-20 lg:py-28 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Mission Framework Cards -->
+    <section id="about" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">Daily Mission</h2>
             <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">How We Train, Equip, & Empower</p>
             
-            <!-- Optimized Framework Grid with Tall, Full-Frame Card Ratios -->
-            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                
-                <!-- Card 1: Spiritual -->
-                <div data-aos="zoom-in-up" data-aos-delay="100" class="relative group overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-slate-950 aspect-[3/4] flex flex-col justify-end p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <!-- Premium Ultra-Clear Background Image -->
-                    <div class="absolute inset-0 z-0">
-                        <img src="./image/church.webp" alt="Spiritual Vision Framework" class="w-full h-full object-cover opacity-100 transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
-                    </div>
-                    <!-- Card Content -->
-                    <div class="relative z-10 text-left">
-                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
-                            <i class="fa-solid fa-compass"></i>
-                        </div>
-                        <h4 class="font-extrabold text-xl text-white tracking-tight">Spiritual</h4>
-                        <p class="mt-2 text-xs text-slate-200 leading-relaxed font-normal">
-                            Nurturing inner purpose, alignment, and ethical clarity through strategic spiritual foundation mentorship.
-                        </p>
-                    </div>
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div data-aos="zoom-in" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-book"></i></div>
+                    <h4 class="font-bold text-slate-900">Education</h4>
                 </div>
-                
-                <!-- Card 2: Education -->
-                <div data-aos="zoom-in-up" data-aos-delay="200" class="relative group overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-slate-950 aspect-[3/4] flex flex-col justify-end p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute inset-0 z-0">
-                        <img src="./image/students.jfif" alt="Academic System Integration" class="w-full h-full object-cover opacity-100 transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
-                    </div>
-                    <div class="relative z-10 text-left">
-                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
-                            <i class="fa-solid fa-book"></i>
-                        </div>
-                        <h4 class="font-extrabold text-xl text-white tracking-tight">Education</h4>
-                        <p class="mt-2 text-xs text-slate-200 leading-relaxed font-normal">
-                            Expanding cognitive capacity with structural knowledge systems, structured courses, and advanced critical analysis.
-                        </p>
-                    </div>
+                <div data-aos="zoom-in" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-gears"></i></div>
+                    <h4 class="font-bold text-slate-900">Skill Dev</h4>
                 </div>
-
-                <!-- Card 3: Skill Dev -->
-                <div data-aos="zoom-in-up" data-aos-delay="300" class="relative group overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-slate-950 aspect-[3/4] flex flex-col justify-end p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute inset-0 z-0">
-                        <img src="./image/dev.webp" alt="Technical Craftsmanship Development" class="w-full h-full object-cover opacity-100 transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
-                    </div>
-                    <div class="relative z-10 text-left">
-                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
-                            <i class="fa-solid fa-gears"></i>
-                        </div>
-                        <h4 class="font-extrabold text-xl text-white tracking-tight">Skill Dev</h4>
-                        <p class="mt-2 text-xs text-slate-200 leading-relaxed font-normal">
-                            Imparting high-income technical expertise and administrative craftsmanship optimized for global execution markets.
-                        </p>
-                    </div>
+                <div data-aos="zoom-in" data-aos-delay="300" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="font-bold text-slate-900">Character</h4>
                 </div>
-
-                <!-- Card 4: Character -->
-                <div data-aos="zoom-in-up" data-aos-delay="400" class="relative group overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-slate-950 aspect-[3/4] flex flex-col justify-end p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <div class="absolute inset-0 z-0">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=600" alt="Leadership Accountability Training" class="w-full h-full object-cover opacity-100 transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
-                    </div>
-                    <div class="relative z-10 text-left">
-                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h4 class="font-extrabold text-xl text-white tracking-tight">Character</h4>
-                        <p class="mt-2 text-xs text-slate-200 leading-relaxed font-normal">
-                            Instilling accountability, resilient self-discipline, and strong leadership honor rules to sustain true influence.
-                        </p>
-                    </div>
+                <div data-aos="zoom-in" data-aos-delay="400" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-compass"></i></div>
+                    <h4 class="font-bold text-slate-900">Spiritual</h4>
                 </div>
-
-                <!-- Card 5: Financial -->
-                <div data-aos="zoom-in-up" data-aos-delay="500" class="relative group overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-slate-950 aspect-[3/4] flex flex-col justify-end p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 sm:col-span-2 lg:col-span-1">
-                    <div class="absolute inset-0 z-0">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=600" alt="Wealth Mechanics & Distribution" class="w-full h-full object-cover opacity-100 transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
-                    </div>
-                    <div class="relative z-10 text-left">
-                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
-                            <i class="fa-solid fa-wallet"></i>
-                        </div>
-                        <h4 class="font-extrabold text-xl text-white tracking-tight">Financial</h4>
-                        <p class="mt-2 text-xs text-slate-200 leading-relaxed font-normal">
-                            Teaching actionable wealth creation principles, asset distribution systems, and fiscal responsibility intelligence.
-                        </p>
-                    </div>
+                <div data-aos="zoom-in" data-aos-delay="500" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-amber-200 transition-colors duration-300 col-span-2 md:col-span-1">
+                    <div class="w-12 h-12 bg-slate-950 text-amber-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl shadow-md"><i class="fa-solid fa-wallet"></i></div>
+                    <h4 class="font-bold text-slate-900">Financial</h4>
                 </div>
-
             </div>
 
-            <!-- Litmus Test Callout Box -->
-            <div data-aos="fade-up" class="mt-20 bg-slate-950 border border-slate-900 rounded-3xl p-8 sm:p-12 relative overflow-hidden text-left shadow-2xl">
-                <div class="absolute -right-8 -bottom-8 text-slate-900 text-9xl pointer-events-none opacity-40">
-                    <i class="fa-solid fa-quote-right"></i>
-                </div>
+            <div data-aos="fade-up" class="mt-16 bg-slate-950 border border-slate-900 rounded-3xl p-8 sm:p-12 relative overflow-hidden text-left">
+                <div class="absolute -right-8 -bottom-8 text-slate-900 text-9xl pointer-events-none"><i class="fa-solid fa-quote-right"></i></div>
                 <h3 class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-3">Our Ultimate Litmus Test</h3>
-                <p class="text-xl sm:text-2xl font-semibold text-white italic max-w-3xl relative z-10">
+                <p class="text-xl sm:text-2xl font-semibold text-white italic max-w-3xl">
                     “Will this produce a leader who can influence and transform others?”
                 </p>
             </div>
         </div>
     </section>
-
-   
-
 
     <!-- Architecture Pillars -->
     <section id="pillars" class="py-20 bg-slate-900 border-t border-b border-slate-950 text-white">
@@ -449,7 +360,7 @@
                     <div class="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-slate-200 group border-4 border-slate-950">
                         <!-- Replace src path with your hosting asset string -->
                         <img 
-                            src="./image/presidents.png" 
+                            src="./image/image.jpeg" 
                             alt="Chukwu Joshua Chukwuebuka - Founder of G12 Institute" 
                             class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
                             loading="lazy"
@@ -458,7 +369,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-80"></div>
                         <div class="absolute bottom-6 left-6 right-6 bg-slate-950/80 backdrop-blur-md border border-slate-800 rounded-2xl p-4 text-white hidden sm:block">
                             <p class="text-[11px] uppercase tracking-widest text-amber-400 font-bold mb-0.5">Core Philosophy</p>
-                            <p class="text-xs italic font-medium text-slate-200">"Leadership is a responsibility to serve, empower, and inspire others."</p>
+                            <p class="text-xs italic font-medium text-slate-200">"Leadership is a responsibility to serve, empower, and inspire others."[cite: 1]</p>
                         </div>
                     </div>
                 </div>
@@ -470,11 +381,11 @@
                             The Visionary
                         </span>
                         <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-950 tracking-tight leading-snug">
-                            Chukwu Joshua Chukwuebuka
+                            Chukwu Joshua Chukwuebuka[cite: 1]
                         </h2>
                         <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1">
                             <p class="text-base font-bold text-amber-500">
-                                Founder, G12 Institute
+                                Founder, G12 Institute[cite: 1]
                             </p>
                             <span class="hidden sm:inline text-slate-300">|</span>
                             <a href="tel:09035466348" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-700 hover:text-amber-500 transition w-fit">
@@ -486,16 +397,16 @@
 
                     <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-4 font-light">
                         <p>
-                            Chukwu Joshua Chukwuebuka is a leadership strategist, transformational speaker, and purpose-driven mentor dedicated to raising a generation of individuals who lead with integrity, excellence, and impact. He is the founder of the <span class="font-semibold text-slate-900">G12 Institute</span>, a leadership and human development organization committed to equipping people with the knowledge, character, and practical skills needed to thrive in every area of life.
+                            Chukwu Joshua Chukwuebuka is a leadership strategist, transformational speaker, and purpose-driven mentor dedicated to raising a generation of individuals who lead with integrity, excellence, and impact[cite: 1]. He is the founder of the <span class="font-semibold text-slate-900">G12 Institute</span>, a leadership and human development organization committed to equipping people with the knowledge, character, and practical skills needed to thrive in every area of life[cite: 1].
                         </p>
                         <p>
-                            With a deep passion for leadership, identity, purpose, and personal transformation, Joshua has devoted his life to helping individuals discover their God-given potential, overcome limitations, and become influential leaders in their families, communities, careers, and nations.
+                            With a deep passion for leadership, identity, purpose, and personal transformation, Joshua has devoted his life to helping individuals discover their God-given potential, overcome limitations, and become influential leaders in their families, communities, careers, and nations[cite: 1].
                         </p>
                         <p>
-                            Through the G12 Institute, he champions a holistic approach to human development built on five core pillars: <span class="font-medium text-slate-950">Kingdom Development, Leadership Development, Financial Development, Capacity Building, and Personal Development</span>. His teaching emphasizes that true success is achieved when the spirit, soul, and body are intentionally developed and aligned with purpose.
+                            Through the G12 Institute, he champions a holistic approach to human development built on five core pillars: <span class="font-medium text-slate-950">Kingdom Development, Leadership Development, Financial Development, Capacity Building, and Personal Development</span>[cite: 1]. His teaching emphasizes that true success is achieved when the spirit, soul, and body are intentionally developed and aligned with purpose[cite: 1].
                         </p>
                         <p>
-                            Joshua is known for his practical, thought-provoking, and inspiring approach to teaching. His vision is to build a community of purpose-driven leaders who will influence society with wisdom, competence, and godly values, creating lasting transformation across generations.
+                            Joshua is known for his practical, thought-provoking, and inspiring approach to teaching[cite: 1]. His vision is to build a community of purpose-driven leaders who will influence society with wisdom, competence, and godly values, creating lasting transformation across generations[cite: 1].
                         </p>
                     </div>
 
@@ -503,7 +414,7 @@
                     <div class="pt-4 border-t border-slate-200/80 flex items-start gap-3">
                         <span class="text-amber-500 text-xl pt-1"><i class="fa-solid fa-quote-left opacity-40"></i></span>
                         <p class="text-xs sm:text-sm italic font-medium text-slate-700 leading-relaxed">
-                            He believes that leadership is not merely a position but a responsibility to serve, empower, and inspire others to become the best versions of themselves.
+                            He believes that leadership is not merely a position but a responsibility to serve, empower, and inspire others to become the best versions of themselves[cite: 1].
                         </p>
                     </div>
                 </div>
@@ -512,164 +423,52 @@
         </div>
     </section>
 
+    <!-- Registration & Integration Forms -->
+    <section id="join" class="py-20 bg-gradient-to-br from-slate-950 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 data-aos="fade-up" class="text-3xl sm:text-5xl font-black text-white">G12 Institute is not something you join—it is something you become.</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
+                Position yourself to build systems that will transform your own reality, giving you leverage to duplicate that transformation onto others.
+            </p>
 
-   <!-- Management & Administration Section -->
-    <section id="management" class="py-20 lg:py-28 bg-slate-950 text-white border-t border-b border-slate-900 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
-                    Institutional Governance
-                </span>
-                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-                    Management & Administrators
-                </h2>
-                <p data-aos="fade-up" data-aos-delay="100" class="mt-4 text-sm sm:text-base text-slate-400 font-light">
-                    The strategic leadership guiding operational frameworks, academic excellence, and capacity multiplication.
-                </p>
-            </div>
-
-            <!-- Administrators Grid Layout -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Administrator 1 -->
-                <div data-aos="fade-up" class="group flex flex-col bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-4 shadow-xl">
-                    <div class="w-full aspect-[4/5] rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center border border-slate-800">
-                        <img 
-                            src="./image/Uwakwe Emmanuel Chidera.png" 
-                            alt="Dr. Uwakwe Emmanuel Chidera" 
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="mt-5 flex-grow flex flex-col justify-between text-center px-2 pb-2">
-                        <div>
-                            <h3 class="text-lg font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
-                                Dr. Uwakwe Emmanuel Chidera
-                            </h3>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-amber-500 mt-2">
-                                Director of Communication and Media
-                            </p>
-                        </div>
-                    </div>
+            <form data-aos="fade-up" data-aos-delay="200" class="mt-12 bg-white p-4 sm:p-6 rounded-2xl shadow-2xl max-w-md mx-auto text-gray-900 flex flex-col gap-4 text-left border border-slate-100">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-amber-400" required>
                 </div>
-
-                <!-- Administrator 2 -->
-                <div data-aos="fade-down" class="group flex flex-col bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-4 shadow-xl">
-                    <div class="w-full aspect-[4/5] rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center border border-slate-800">
-                        <img 
-                            src="./image/Ebisike Gloria Adaeze.png" 
-                            alt="Ebisike Gloria Adaeze" 
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="mt-5 flex-grow flex flex-col justify-between text-center px-2 pb-2">
-                        <div>
-                            <h3 class="text-lg font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
-                                Ebisike Gloria Adaeze
-                            </h3>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-amber-500 mt-2">
-                                Director of Administration and Operations
-                            </p>
-                        </div>
-                    </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+                    <input type="email" placeholder="john@example.com" class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-amber-400" required>
                 </div>
-
-                <!-- Administrator 3 -->
-                <div data-aos="fade-up" class="group flex flex-col bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-4 shadow-xl">
-                    <div class="w-full aspect-[4/5] rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center border border-slate-800">
-                        <img 
-                            src="./image/Lubangakene Emmanuel.png" 
-                            alt="Lubangakene Emmanuel" 
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="mt-5 flex-grow flex flex-col justify-between text-center px-2 pb-2">
-                        <div>
-                            <h3 class="text-lg font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
-                                Lubangakene Emmanuel
-                            </h3>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-amber-500 mt-2">
-                                Executive Director of G12 Institute
-                            </p>
-                        </div>
-                    </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Primary Pillar Focus Interest</label>
+                    <select class="w-full border border-slate-200 rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:border-amber-400">
+                        <option>Leadership Development</option>
+                        <option>Skill & Capacity Building</option>
+                        <option>Character & Values</option>
+                        <option>Spiritual & Purpose Alignment</option>
+                        <option>Financial Development</option>
+                    </select>
                 </div>
-
-                <!-- Administrator 4 -->
-                <div data-aos="fade-down" class="group flex flex-col bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-4 shadow-xl">
-                    <div class="w-full aspect-[4/5] rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center border border-slate-800">
-                        <img 
-                            src="./image/OMARA BOB MAVINE.png" 
-                            alt="OMARA BOB MAVINE" 
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                        >
-                    </div>
-                    <div class="mt-5 flex-grow flex flex-col justify-between text-center px-2 pb-2">
-                        <div>
-                            <h3 class="text-lg font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
-                                OMARA BOB MAVINE
-                            </h3>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-amber-500 mt-2">
-                                Director of Academic Training
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                <button type="submit" class="w-full bg-slate-950 hover:bg-slate-900 text-amber-400 text-sm font-bold py-3 rounded-lg uppercase tracking-wide mt-2 transition shadow-md">Initiate Integration</button>
+            </form>
         </div>
     </section>
 
-   
-
     <!-- Structural Layout Footer -->
-    <footer class="bg-slate-950 border-t border-slate-900 pt-20 pb-10 px-6 text-white">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div class="col-span-1 md:col-span-1">
-                <div class="flex items-center gap-2 mb-6">
-                    <span class="text-xl font-black tracking-wider text-white">G12 <span class="text-amber-400">INSTITUTE</span></span>
-                </div>
-                <p class="text-slate-400 text-sm leading-relaxed font-light">Building capacity-driven individuals and sustainable systems that outlive trends to create lasting social, economic, and spiritual transformation.</p>
-            </div>
+    <footer class="bg-slate-950 text-slate-500 text-xs py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
-                <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">The Blueprint</h4>
-                <ul class="text-slate-400 space-y-4 text-sm font-light">
-                    <li><a href="#about" class="hover:text-amber-400 transition">Our Mission</a></li>
-                    <li><a href="#pillars" class="hover:text-amber-400 transition">Core Pillars</a></li>
-                    <li><a href="#system" class="hover:text-amber-400 transition">The System</a></li>
-                    <li><a href="#founder" class="hover:text-amber-400 transition">The Visionary</a></li>
-                </ul>
+                <span class="text-base font-black tracking-wider text-white">G12 <span class="text-amber-400">Institute</span></span>
+                <p class="mt-1 text-[11px] text-slate-400">Building Men, Building Systems. &copy; 2026. All Rights Reserved.</p>
             </div>
-
-            <div>
-                <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">Integrations</h4>
-                <ul class="text-slate-400 space-y-4 text-sm font-light">
-                    <li><a href="#join" class="hover:text-amber-400 transition">Join Ecosystem</a></li>
-                    <li><a href="#" class="hover:text-amber-400 transition">Privacy Policy</a></li>
-                  <li><a href="mailto:instituteg17@gmail.com" class="hover:text-amber-400 transition">Email</a></li>
-                    <li><a href="tel:09035466348" class="hover:text-amber-400 transition">Contact Support</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">System Dispatch</h4>
-                <p class="text-slate-400 text-xs mb-3 font-light">Subscribe to receive strategic insight updates and operational cohort announcements.</p>
-                <div class="flex gap-2">
-                    <input type="email" placeholder="Email address" class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg text-sm focus:outline-none focus:border-amber-400 w-full text-white">
-                    <button class="bg-amber-400 hover:bg-amber-500 transition px-4 rounded-lg text-slate-950 flex items-center justify-center">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-        <div class="text-center text-slate-400 text-xs border-t border-slate-900/60 pt-10">
-    © <span id="current-year"></span> G12 Institute. All Rights Reserved. Engineered by <a href="https://nwambekeifeanyi.github.io/ifeanyicodes/" class="text-slate-400 hover:text-amber-400 font-medium transition">Ifeanyi Codes</a>
-</div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -681,8 +480,6 @@
             mirror: true, 
             offset: 50
         });
-
-        document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile Menu Toggle Logic
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
