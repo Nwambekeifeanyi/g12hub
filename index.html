@@ -84,20 +84,24 @@
     </nav>
 
     <!-- Hero Section -->
-   <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+  <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 text-white overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('./image/bg.jfif');">
+        <!-- Dark Overlay Gradient for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-950/85 to-slate-650/95 z-0"></div>
+        <!-- Subtle Grid Pattern Layer -->
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] z-0"></div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             
-           <div data-aos="fade-down" class="flex justify-center mb-6">
-    <div class="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden rounded-full">
-        <img 
-            src="./image/logo.jpeg" 
-            alt="G12 Institute Logo" 
-            class="w-full h-full object-contain rounded-full"
-            loading="eager"
-        >
-    </div>
-</div>
+            <div data-aos="fade-down" class="flex justify-center mb-6">
+                <div class="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center overflow-hidden rounded-full">
+                    <img 
+                        src="./image/logo.jpeg" 
+                        alt="G12 Institute Logo" 
+                        class="w-full h-full object-contain rounded-full"
+                        loading="eager"
+                    >
+                </div>
+            </div>
 
             <span data-aos="fade-down" data-aos-delay="50" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
                 Our Identity: Building Men, Building Systems
