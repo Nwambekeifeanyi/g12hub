@@ -33,9 +33,8 @@
     /* --- Core Brand Colors --- */
     --brand-black: #0B0F19;        /* Deep slate-tinted absolute black */
     --brand-yellow: #292403;       /* Vibrant, accessible core yellow */
-    --brand-yellow-hover: #FF6000; /* Deepened gold-yellow for interactive hover states */
+    --brand-yellow-hover: #EAB308; /* Deepened gold-yellow for interactive hover states */
     --brand-white: #FFFFFF;        /* Absolute, crisp brand brilliant white */
-    --brand-color: #FF6000;        /* Defined brand color */
     
     /* --- Derived Structural Layout Tones --- */
     --bg-dark: var(--brand-black); 
@@ -69,17 +68,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-black tracking-wider text-white">G12 <span style="color: var(--brand-color);">Institute</span></span>
+                    <span class="text-2xl font-black tracking-wider text-white">G12 <span class="text-amber-400">Institute</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#home" class="text-slate-300 hover:text-[var(--brand-color)] transition">Home</a>
-                    <a href="#about" class="text-slate-300 hover:text-[var(--brand-color)] transition">Our Mission</a>
-                    <a href="#pillars" class="text-slate-300 hover:text-[var(--brand-color)] transition">Key Pillars</a>
-                    <a href="#system" class="text-slate-300 hover:text-[var(--brand-color)] transition">The System</a>
-                    <a href="#impact" class="text-slate-300 hover:text-[var(--brand-color)] transition">Impact & Goals</a>
+                    <a href="#home" class="text-slate-300 hover:text-amber-400 transition">Home</a>
+                    <a href="#about" class="text-slate-300 hover:text-amber-400 transition">Our Mission</a>
+                    <a href="#pillars" class="text-slate-300 hover:text-amber-400 transition">Key Pillars</a>
+                    <a href="#system" class="text-slate-300 hover:text-amber-400 transition">The System</a>
+                    <a href="#impact" class="text-slate-300 hover:text-amber-400 transition">Impact & Goals</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="#join" style="background-color: var(--brand-color);" class="text-slate-950 px-6 py-2.5 rounded-full font-bold hover:opacity-90 transition transform hover:scale-105 shadow-md">Join the System</a>
+                    <a href="#join" class="bg-amber-400 text-slate-950 px-6 py-2.5 rounded-full font-bold hover:bg-amber-500 transition transform hover:scale-105 shadow-md">Join the System</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-300 focus:outline-none text-2xl">
@@ -89,12 +88,12 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-slate-900 px-4 pt-2 pb-6 space-y-3 shadow-lg">
-            <a href="#home" class="block text-slate-300 py-2 font-medium hover:text-[var(--brand-color)]">Home</a>
-            <a href="#about" class="block text-slate-300 py-2 font-medium hover:text-[var(--brand-color)]">Our Mission</a>
-            <a href="#pillars" class="block text-slate-300 py-2 font-medium hover:text-[var(--brand-color)]">Key Pillars</a>
-            <a href="#system" class="block text-slate-300 py-2 font-medium hover:text-[var(--brand-color)]">The System</a>
-            <a href="#impact" class="block text-slate-300 py-2 font-medium hover:text-[var(--brand-color)]">Impact & Goals</a>
-            <a href="#join" style="background-color: var(--brand-color);" class="block text-center text-slate-950 py-2.5 rounded-md font-bold">Join the System</a>
+            <a href="#home" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Home</a>
+            <a href="#about" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Our Mission</a>
+            <a href="#pillars" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Key Pillars</a>
+            <a href="#system" class="block text-slate-300 py-2 font-medium hover:text-amber-400">The System</a>
+            <a href="#impact" class="block text-slate-300 py-2 font-medium hover:text-amber-400">Impact & Goals</a>
+            <a href="#join" class="block text-center bg-amber-400 text-slate-950 py-2.5 rounded-md font-bold">Join the System</a>
         </div>
     </nav>
 
@@ -118,24 +117,24 @@
                 </div>
             </div>
 
-            <span data-aos="fade-down" data-aos-delay="50" style="background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); color: var(--brand-color); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="inline-block border rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
+            <span data-aos="fade-down" data-aos-delay="50" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-sm font-semibold uppercase tracking-wider mb-6">
                 Our Identity: Building Men, Building Systems
             </span>
             <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
-                We Don't Just Inspire People. <br><span style="color: var(--brand-color);">We Structure Them.</span>
+                We Don't Just Inspire People. <br><span class="text-amber-400">We Structure Them.</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-light">
                 G12 Institute exists to build men and build systems that outlive individuals—creating lasting social, economic, and spiritual transformation.
             </p>
             <div data-aos="fade-up" data-aos-delay="300" class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#join" style="background-color: var(--brand-color);" class="w-full sm:w-auto hover:opacity-90 text-slate-950 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition transform hover:-translate-y-1 text-center">Become a Change-Maker</a>
+                <a href="#join" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-slate-950 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition transform hover:-translate-y-1 text-center">Become a Change-Maker</a>
                 <a href="#about" class="w-full sm:w-auto bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center">Explore Our Vision</a>
             </div>
         </div>
     </section>
 
     <!-- Countdown Bar Banner -->
-    <section style="background-color: var(--brand-color);" class="py-8 text-slate-950">
+    <section class="bg-amber-400 py-8 text-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div class="text-center lg:text-left" data-aos="fade-right">
                 <h3 class="text-2xl font-black tracking-tight">Next Major Training Cohort</h3>
@@ -143,19 +142,19 @@
             </div>
             <div class="flex gap-4 sm:gap-6" data-aos="fade-left">
                 <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
-                    <span id="days" style="color: var(--brand-color);" class="text-2xl sm:text-3xl font-black">00</span>
+                    <span id="days" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
                     <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Days</span>
                 </div>
                 <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
-                    <span id="hours" style="color: var(--brand-color);" class="text-2xl sm:text-3xl font-black">00</span>
+                    <span id="hours" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
                     <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Hours</span>
                 </div>
                 <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
-                    <span id="minutes" style="color: var(--brand-color);" class="text-2xl sm:text-3xl font-black">00</span>
+                    <span id="minutes" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
                     <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Mins</span>
                 </div>
                 <div class="flex flex-col items-center bg-slate-950 text-white rounded-xl px-4 py-3 min-w-[70px] shadow-md">
-                    <span id="seconds" style="color: var(--brand-color);" class="text-2xl sm:text-3xl font-black">00</span>
+                    <span id="seconds" class="text-2xl sm:text-3xl font-black text-amber-400">00</span>
                     <span class="text-[10px] text-slate-400 uppercase tracking-wider font-bold mt-1">Secs</span>
                 </div>
             </div>
@@ -166,7 +165,7 @@
      <!-- Mission Framework Cards -->
     <section id="about" class="py-20 lg:py-28 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 data-aos="fade-up" style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">Daily Mission</h2>
+            <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">Daily Mission</h2>
             <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">How We Train, Equip, & Empower</p>
             
             <!-- Optimized Framework Grid with Tall, Full-Frame Card Ratios -->
@@ -181,7 +180,7 @@
                     </div>
                     <!-- Card Content -->
                     <div class="relative z-10 text-left">
-                        <div style="background-color: var(--brand-color);" class="w-10 h-10 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
+                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
                             <i class="fa-solid fa-compass"></i>
                         </div>
                         <h4 class="font-extrabold text-xl text-white tracking-tight">Spiritual</h4>
@@ -198,7 +197,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
                     </div>
                     <div class="relative z-10 text-left">
-                        <div style="background-color: var(--brand-color);" class="w-10 h-10 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
+                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
                             <i class="fa-solid fa-book"></i>
                         </div>
                         <h4 class="font-extrabold text-xl text-white tracking-tight">Education</h4>
@@ -215,7 +214,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
                     </div>
                     <div class="relative z-10 text-left">
-                        <div style="background-color: var(--brand-color);" class="w-10 h-10 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
+                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
                             <i class="fa-solid fa-gears"></i>
                         </div>
                         <h4 class="font-extrabold text-xl text-white tracking-tight">Skill Dev</h4>
@@ -232,7 +231,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
                     </div>
                     <div class="relative z-10 text-left">
-                        <div style="background-color: var(--brand-color);" class="w-10 h-10 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
+                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
                         <h4 class="font-extrabold text-xl text-white tracking-tight">Character</h4>
@@ -249,7 +248,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
                     </div>
                     <div class="relative z-10 text-left">
-                        <div style="background-color: var(--brand-color);" class="w-10 h-10 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
+                        <div class="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center mb-4 text-lg font-bold shadow-md">
                             <i class="fa-solid fa-wallet"></i>
                         </div>
                         <h4 class="font-extrabold text-xl text-white tracking-tight">Financial</h4>
@@ -266,7 +265,7 @@
                 <div class="absolute -right-8 -bottom-8 text-slate-900 text-9xl pointer-events-none opacity-40">
                     <i class="fa-solid fa-quote-right"></i>
                 </div>
-                <h3 style="color: var(--brand-color);" class="text-sm font-bold uppercase tracking-wider mb-3">Our Ultimate Litmus Test</h3>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-3">Our Ultimate Litmus Test</h3>
                 <p class="text-xl sm:text-2xl font-semibold text-white italic max-w-3xl relative z-10">
                     “Will this produce a leader who can influence and transform others?”
                 </p>
@@ -281,7 +280,7 @@
     <section id="pillars" class="py-20 bg-slate-900 border-t border-b border-slate-950 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">Core Architecture</h2>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-400">Core Architecture</h2>
                 <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">The 5 Pillars We Focus On</p>
             </div>
 
@@ -289,9 +288,9 @@
 
 
 
-                 <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition group">
+                 <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
 
-                    <div style="background-color: var(--brand-color);" class="w-12 h-12 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">1</div>
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">1</div>
 
                     <h3 class="text-xl font-bold text-white mb-3">Spiritual & Purpose Alignment</h3>
 
@@ -301,9 +300,9 @@
 
 
 
-                <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition group">
+                <div data-aos="fade-up" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
 
-                    <div style="background-color: var(--brand-color);" class="w-12 h-12 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">2</div>
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">2</div>
 
                     <h3 class="text-xl font-bold text-white mb-3">Leadership Development</h3>
 
@@ -311,9 +310,9 @@
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition group">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
 
-                    <div style="background-color: var(--brand-color);" class="w-12 h-12 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">3</div>
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">3</div>
 
                     <h3 class="text-xl font-bold text-white mb-3">Skill & Capacity Building</h3>
 
@@ -321,9 +320,9 @@
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition group">
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group">
 
-                    <div style="background-color: var(--brand-color);" class="w-12 h-12 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">4</div>
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">4</div>
 
                     <h3 class="text-xl font-bold text-white mb-3">Character & Values</h3>
 
@@ -333,9 +332,9 @@
 
                
 
-                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition group md:col-span-2 lg:col-span-1">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-950 rounded-2xl p-8 shadow-xl border border-slate-800 hover:border-amber-400/30 transition group md:col-span-2 lg:col-span-1">
 
-                    <div style="background-color: var(--brand-color);" class="w-12 h-12 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">5</div>
+                    <div class="w-12 h-12 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl font-black mb-6 group-hover:scale-110 transition-transform">5</div>
 
                     <h3 class="text-xl font-bold text-white mb-3">Financial Development</h3>
 
@@ -355,7 +354,7 @@
         <!-- Header with Title and Scroll Controls -->
         <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 border-b border-slate-800 pb-6 gap-4">
             <div>
-                <span data-aos="fade-down" style="background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); color: var(--brand-color); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="inline-block border rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
+                <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
                     Curriculum Framework
                 </span>
                 <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white uppercase">
@@ -368,10 +367,10 @@
 
             <!-- Scroll Up / Down Navigation Controls -->
             <div class="flex items-center gap-2 self-start sm:self-auto">
-                <button onclick="scrollToCourses('up')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:bg-slate-800 text-slate-300 hover:text-[var(--brand-color)] flex items-center justify-center transition shadow-md" title="Scroll Up">
+                <button onclick="scrollToCourses('up')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 hover:bg-slate-800 text-slate-300 hover:text-amber-400 flex items-center justify-center transition shadow-md" title="Scroll Up">
                     <i class="fa-solid fa-arrow-up text-sm"></i>
                 </button>
-                <button onclick="scrollToCourses('down')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:bg-slate-800 text-slate-300 hover:text-[var(--brand-color)] flex items-center justify-center transition shadow-md" title="Scroll Down">
+                <button onclick="scrollToCourses('down')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 hover:bg-slate-800 text-slate-300 hover:text-amber-400 flex items-center justify-center transition shadow-md" title="Scroll Down">
                     <i class="fa-solid fa-arrow-down text-sm"></i>
                 </button>
             </div>
@@ -381,104 +380,104 @@
         <div id="course-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <!-- Course 1 -->
-            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 01</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 01</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-graduation-cap"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">1. Foundations of Leadership</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Develops a strong understanding of leadership by focusing on self-leadership, vision, values, and the principles of effective leadership.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleLeadershipSubCourses(1)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleLeadershipSubCourses(1)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="lead-icon-1" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="lead-sub-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Leadership Principles and Mindset</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Self-Leadership and Personal Effectiveness</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Vision, Purpose, and Values</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Leadership Principles and Mindset</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Self-Leadership and Personal Effectiveness</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Vision, Purpose, and Values</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 2 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 02</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-people-group"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 02</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-people-group"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">2. Leadership Skills and Influence</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Builds the practical skills required to lead people, communicate effectively, and influence positive change.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleLeadershipSubCourses(2)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleLeadershipSubCourses(2)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="lead-icon-2" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="lead-sub-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Communication and Emotional Intelligence</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Decision-Making and Problem Solving</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Teamwork and Influence</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Communication and Emotional Intelligence</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Decision-Making and Problem Solving</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Teamwork and Influence</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 3 -->
-            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 03</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-chart-line"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 03</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-chart-line"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">3. Strategic Leadership & Organizational Growth</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Equips leaders to think strategically, build systems, manage resources, and lead sustainable growth.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleLeadershipSubCourses(3)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleLeadershipSubCourses(3)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="lead-icon-3" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="lead-sub-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Strategic Thinking and Planning</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Organizational Development and Systems</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Project and Change Management</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Strategic Thinking and Planning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Organizational Development and Systems</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Project and Change Management</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 4 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 04</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-globe"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 04</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-globe"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">4. Transformational and Global Leadership</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Prepares leaders to create lasting impact, mentor others, lead with integrity, and influence communities, organizations, and nations.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleLeadershipSubCourses(4)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleLeadershipSubCourses(4)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="lead-icon-4" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="lead-sub-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Ethical and Servant Leadership</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Coaching, Mentorship, and Talent Development</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Leadership for Social and Global Impact</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Ethical and Servant Leadership</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Coaching, Mentorship, and Talent Development</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Leadership for Social and Global Impact</li>
                         </ul>
                     </div>
                 </div>
@@ -495,7 +494,7 @@
         <!-- Header with Title and Scroll Controls -->
         <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 border-b border-slate-800 pb-6 gap-4">
             <div>
-                <span data-aos="fade-down" style="background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); color: var(--brand-color); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="inline-block border rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
+                <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
                     Economic Empowerment
                 </span>
                 <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white uppercase">
@@ -508,10 +507,10 @@
 
             <!-- Scroll Up / Down Navigation Controls -->
             <div class="flex items-center gap-2 self-start sm:self-auto">
-                <button onclick="scrollFinancialCourses('up')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:bg-slate-800 text-slate-300 hover:text-[var(--brand-color)] flex items-center justify-center transition shadow-md" title="Scroll Up">
+                <button onclick="scrollFinancialCourses('up')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 hover:bg-slate-800 text-slate-300 hover:text-amber-400 flex items-center justify-center transition shadow-md" title="Scroll Up">
                     <i class="fa-solid fa-arrow-up text-sm"></i>
                 </button>
-                <button onclick="scrollFinancialCourses('down')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:bg-slate-800 text-slate-300 hover:text-[var(--brand-color)] flex items-center justify-center transition shadow-md" title="Scroll Down">
+                <button onclick="scrollFinancialCourses('down')" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 hover:bg-slate-800 text-slate-300 hover:text-amber-400 flex items-center justify-center transition shadow-md" title="Scroll Down">
                     <i class="fa-solid fa-arrow-down text-sm"></i>
                 </button>
             </div>
@@ -521,104 +520,104 @@
         <div id="financial-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <!-- Course 1 -->
-            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 01</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-brain"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 01</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-brain"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">1. Foundations of Financial Intelligence</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Builds a strong understanding of money, wealth creation, and sound financial principles for long-term success.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleFinancialSubCourses(1)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleFinancialSubCourses(1)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="fin-icon-1" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="fin-sub-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Financial Literacy and Money Management</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Budgeting, Saving, and Debt Management</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Wealth Mindset and Financial Discipline</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Financial Literacy and Money Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Budgeting, Saving, and Debt Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Wealth Mindset and Financial Discipline</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 2 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 02</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-coins"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 02</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-coins"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">2. Personal Finance and Wealth Building</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Equips individuals with practical skills to manage income, grow assets, and achieve financial independence.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleFinancialSubCourses(2)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleFinancialSubCourses(2)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="fin-icon-2" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="fin-sub-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Investing and Asset Building</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Risk Management and Financial Planning</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Personal Financial Goal Setting</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Investing and Asset Building</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Risk Management and Financial Planning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Personal Financial Goal Setting</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 3 -->
-            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 03</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-lightbulb"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 03</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-lightbulb"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">3. Entrepreneurship and Value Creation</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Develops the knowledge and skills to identify opportunities, build businesses, and create sustainable sources of income.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleFinancialSubCourses(3)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleFinancialSubCourses(3)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="fin-icon-3" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="fin-sub-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Business Fundamentals and Entrepreneurship</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Business Finance and Cash Flow Management</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Innovation and Value Creation</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Business Fundamentals and Entrepreneurship</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Business Finance and Cash Flow Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Innovation and Value Creation</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Course 4 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition shadow-xl flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 hover:border-amber-400/30 transition shadow-xl flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span style="color: var(--brand-color); background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border">Module 04</span>
-                        <div class="text-slate-600 text-lg group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition"><i class="fa-solid fa-vault"></i></div>
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">Module 04</span>
+                        <div class="text-slate-600 text-lg group-hover:text-amber-400/40 transition"><i class="fa-solid fa-vault"></i></div>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">4. Strategic Wealth and Financial Leadership</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Prepares individuals to build lasting wealth, lead financially responsible organizations, and create generational impact.</p>
                 </div>
 
                 <div class="pt-4 border-t border-slate-800">
-                    <button onclick="toggleFinancialSubCourses(4)" style="color: var(--brand-color);" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider hover:opacity-80 transition py-1">
+                    <button onclick="toggleFinancialSubCourses(4)" class="w-full flex items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 transition py-1">
                         <span>View Sub-Courses</span>
                         <i id="fin-icon-4" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                     </button>
                     <div id="fin-sub-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <ul style="border-left-color: color-mix(in srgb, var(--brand-color) 40%, transparent);" class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 pl-3.5">
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Advanced Investment Strategies</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Corporate Finance and Financial Leadership</li>
-                            <li class="flex items-center gap-2"><i style="color: var(--brand-color);" class="fa-solid fa-circle-check text-[10px]"></i> Legacy Building and Generational Wealth</li>
+                        <ul class="mt-4 space-y-2.5 text-xs text-slate-300 border-l-2 border-amber-400/40 pl-3.5">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Advanced Investment Strategies</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Corporate Finance and Financial Leadership</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[10px] text-amber-400"></i> Legacy Building and Generational Wealth</li>
                         </ul>
                     </div>
                 </div>
@@ -635,32 +634,32 @@
     <section id="system" class="py-20 lg:py-28 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">The Network Effect</h2>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">The Network Effect</h2>
                 <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">How the G12 Matrix Multiplies</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 relative items-center">
                 <div data-aos="fade-right" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-900">
-                    <div style="background-color: var(--brand-color);" class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">1</div>
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">1</div>
                     <h4 class="text-lg font-bold mt-2">1 Person Trained</h4>
                     <p class="text-slate-400 text-xs mt-2">Enters the ecosystem to undergo holistic framework acceleration.</p>
                 </div>
 
                 <div data-aos="fade-right" data-aos-delay="100" class="bg-slate-900 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-800">
-                    <div style="background-color: var(--brand-color);" class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">2</div>
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">2</div>
                     <h4 class="text-lg font-bold mt-2">Becomes a Leader</h4>
                     <p class="text-slate-400 text-xs mt-2">Internalizes values, achieves high competence, moves to execute.</p>
                 </div>
 
                 <div data-aos="fade-right" data-aos-delay="200" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border border-slate-900">
-                    <div style="background-color: var(--brand-color);" class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">3</div>
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md">3</div>
                     <h4 class="text-lg font-bold mt-2">Leads Others (G12+)</h4>
                     <p class="text-slate-400 text-xs mt-2">Structures, guides, and deploys a custom unit of 12 or more people.</p>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="300" style="border-color: var(--brand-color);" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border-2">
-                    <div style="background-color: var(--brand-color);" class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md"><i class="fa-solid fa-arrows-spin"></i></div>
-                    <h4 style="color: var(--brand-color);" class="text-lg font-bold mt-2">Infinite Ripple Effect</h4>
+                <div data-aos="fade-right" data-aos-delay="300" class="bg-slate-950 text-white p-8 rounded-2xl text-center relative shadow-xl border-2 border-amber-400">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-amber-400 text-slate-950 rounded-full flex items-center justify-center border-4 border-white font-bold shadow-md"><i class="fa-solid fa-arrows-spin"></i></div>
+                    <h4 class="text-lg font-bold mt-2 text-amber-400">Infinite Ripple Effect</h4>
                     <p class="text-slate-300 text-xs mt-2">The system scales exponentially. Compound societal transformation occurs.</p>
                 </div>
             </div>
@@ -673,12 +672,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 
                 <div data-aos="fade-right">
-                    <span style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">Clear Metric Anchors</span>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Clear Metric Anchors</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-8">What We Measure & Track</h2>
                     
                     <div class="space-y-6">
                         <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
-                            <span style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-wider">Every 6 Months</span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Every 6 Months</span>
                             <div class="flex items-baseline gap-2 mt-1">
                                 <span class="text-3xl font-black text-white">600</span>
                                 <span class="text-slate-400 text-sm font-medium">Individuals fully equipped</span>
@@ -687,7 +686,7 @@
                         </div>
 
                         <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
-                            <span style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-wider">Every 12 Months</span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Every 12 Months</span>
                             <div class="flex items-baseline gap-2 mt-1">
                                 <span class="text-3xl font-black text-white">1,000+</span>
                                 <span class="text-slate-400 text-sm font-medium">Reached & Activated</span>
@@ -698,24 +697,24 @@
                 </div>
 
                 <div data-aos="fade-left">
-                    <span style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">Operational Blueprint</span>
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Operational Blueprint</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-8">Execution Engine</h2>
 
                     <div class="relative border-l-2 border-slate-800 ml-4 space-y-8">
                         <div class="relative pl-8">
-                            <div style="background-color: var(--brand-color);" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full shadow-md border-4 border-slate-950"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Weekly Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Small group accountability circles, rigorous applied-skill worklabs (online & offline match formats), and personal health/mindset tracking checks.</p>
                         </div>
 
                         <div class="relative pl-8">
-                            <div style="background-color: var(--brand-color);" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full shadow-md border-4 border-slate-950"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-500 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Monthly Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Advanced management simulation sessions, dynamic guest speaker/executive mentor strategy meetings, and real-world project deadlines.</p>
                         </div>
 
                         <div class="relative pl-8">
-                            <div style="background-color: var(--brand-color);" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full shadow-md border-4 border-slate-950"></div>
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 shadow-md border-4 border-slate-950"></div>
                             <h4 class="text-lg font-bold text-white">Semi-Annual Cadence</h4>
                             <p class="text-slate-400 text-xs mt-1">Launch major training cohorts (600 base load), extract clean metrics analytics data, and execute structural promotions for new leaders.</p>
                         </div>
@@ -730,41 +729,41 @@
     <section class="py-20 lg:py-28 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 data-aos="fade-up" style="color: var(--brand-color);" class="text-xs font-bold uppercase tracking-widest">Future Landscape</h2>
+                <h2 data-aos="fade-up" class="text-xs font-bold uppercase tracking-widest text-amber-500">Future Landscape</h2>
                 <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-950">The Tangible Shifts We Are Forcing</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div data-aos="fade-up" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition-all">
-                    <span style="background-color: var(--brand-color);" class="text-slate-950 text-xl p-3 rounded-xl shadow-sm"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <div data-aos="fade-up" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-arrow-trend-up"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Self-Reliant Youth</h4>
                         <p class="text-xs text-slate-500 mt-1">Decisive generation taking active economic control through deep skills.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="50" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition-all">
-                    <span style="background-color: var(--brand-color);" class="text-slate-950 text-xl p-3 rounded-xl shadow-sm"><i class="fa-solid fa-city"></i></span>
+                <div data-aos="fade-up" data-aos-delay="50" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-city"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Economic Lift</h4>
                         <p class="text-xs text-slate-500 mt-1">Localized micro-ecosystems directly upgrading production, scaling output.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition-all">
-                    <span style="background-color: var(--brand-color);" class="text-slate-950 text-xl p-3 rounded-xl shadow-sm"><i class="fa-solid fa-scale-balanced"></i></span>
+                <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-scale-balanced"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Ethical Leadership</h4>
                         <p class="text-xs text-slate-500 mt-1">A generation that views values as non-negotiable standard foundations.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="150" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition-all">
-                    <span style="background-color: var(--brand-color);" class="text-slate-950 text-xl p-3 rounded-xl shadow-sm"><i class="fa-solid fa-eye"></i></span>
+                <div data-aos="fade-up" data-aos-delay="150" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-eye"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Clarity of Purpose</h4>
                         <p class="text-xs text-slate-500 mt-1">Eliminating existential wandering; converting time into high-impact value.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-[color-mix(in_srgb,var(--brand-color)_30%,transparent)] transition-all md:col-span-2 lg:col-span-1">
-                    <span style="background-color: var(--brand-color);" class="text-slate-950 text-xl p-3 rounded-xl shadow-sm"><i class="fa-solid fa-heart-circle-check"></i></span>
+                <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-50 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-amber-200 transition-all md:col-span-2 lg:col-span-1">
+                    <span class="text-slate-950 text-xl bg-amber-400 p-3 rounded-xl shadow-sm"><i class="fa-solid fa-heart-circle-check"></i></span>
                     <div>
                         <h4 class="font-bold text-slate-900 text-base">Social Optimization</h4>
                         <p class="text-xs text-slate-500 mt-1">Drastic natural reduction of structural friction through value-based choices.</p>
@@ -792,7 +791,7 @@
                         <!-- Decorative Branding Core Accent Overlays -->
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-80"></div>
                         <div class="absolute bottom-6 left-6 right-6 bg-slate-950/80 backdrop-blur-md border border-slate-800 rounded-2xl p-4 text-white hidden sm:block">
-                            <p style="color: var(--brand-color);" class="text-[11px] uppercase tracking-widest font-bold mb-0.5">Core Philosophy</p>
+                            <p class="text-[11px] uppercase tracking-widest text-amber-400 font-bold mb-0.5">Core Philosophy</p>
                             <p class="text-xs italic font-medium text-slate-200">"Leadership is a responsibility to serve, empower, and inspire others."</p>
                         </div>
                     </div>
@@ -801,16 +800,21 @@
                 <!-- Founder Profile Bio Text Block -->
                 <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
                     <div>
-                        <span style="color: var(--brand-color);" class="inline-block bg-slate-950 border border-slate-900 rounded-full px-4 py-1 text-xs font-bold uppercase tracking-wider mb-3">
+                        <span class="inline-block bg-slate-950 text-amber-400 border border-slate-900 rounded-full px-4 py-1 text-xs font-bold uppercase tracking-wider mb-3">
                             The Visionary
                         </span>
                         <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-950 tracking-tight leading-snug">
                             Chukwu Joshua Chukwuebuka
                         </h2>
                         <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1">
-                            <p style="color: var(--brand-color);" class="text-base font-bold">
+                            <p class="text-base font-bold text-amber-500">
                                 Founder, G12 Institute
                             </p>
+                            <!-- <span class="hidden sm:inline text-slate-300">|</span> -->
+                           <!-- <a href="https://wa.me/2349035466348" target="_blank" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-500 hover:text-emerald-500 transition w-fit group">
+    <i class="fa-brands fa-whatsapp text-xs text-emerald-500 opacity-90 group-hover:opacity-100"></i>
+    WhatsApp
+</a> -->
                         </div>
                     </div>
 
@@ -831,7 +835,7 @@
 
                     <!-- Micro Quote Hook Callout Block -->
                     <div class="pt-4 border-t border-slate-200/80 flex items-start gap-3">
-                        <span style="color: var(--brand-color);" class="text-xl pt-1"><i class="fa-solid fa-quote-left opacity-40"></i></span>
+                        <span class="text-amber-500 text-xl pt-1"><i class="fa-solid fa-quote-left opacity-40"></i></span>
                         <p class="text-xs sm:text-sm italic font-medium text-slate-700 leading-relaxed">
                             He believes that leadership is not merely a position but a responsibility to serve, empower, and inspire others to become the best versions of themselves.
                         </p>
@@ -848,7 +852,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-20">
-            <span data-aos="fade-down" style="background-color: color-mix(in srgb, var(--brand-color) 10%, transparent); color: var(--brand-color); border-color: color-mix(in srgb, var(--brand-color) 20%, transparent);" class="inline-block border rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
+            <span data-aos="fade-down" class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/20 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
                 Institutional Governance
             </span>
             <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
@@ -862,8 +866,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             
             <!-- Administrator 1 -->
-            <div data-aos="fade-up" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-all duration-300 p-6 shadow-xl text-center">
-                <div style="--hover-border: var(--brand-color);" class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-[var(--hover-border)] transition-colors duration-300 p-1 shadow-inner">
+            <div data-aos="fade-up" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-6 shadow-xl text-center">
+                <div class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-amber-400 transition-colors duration-300 p-1 shadow-inner">
                     <img 
                         src="./image/Executive Director.jpeg" 
                         alt="Lubangakene Emmanuel" 
@@ -873,10 +877,10 @@
                 </div>
                 <div class="mt-5 flex-grow flex flex-col justify-between px-2 pb-2">
                     <div>
-                        <h3 style="" class="text-base font-bold text-white tracking-tight group-hover:text-[var(--brand-color)] transition-colors duration-300">
+                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
                             Lubangakene Emmanuel
                         </h3>
-                        <p style="color: var(--brand-color);" class="text-[10px] font-semibold uppercase tracking-wider mt-2">
+                        <p class="text-[10px] font-semibold uppercase tracking-wider text-amber-500 mt-2">
                             Executive Director of G12 Institute
                         </p>
                     </div>
@@ -884,8 +888,8 @@
             </div>
 
             <!-- Administrator 2 -->
-            <div data-aos="fade-down" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-all duration-300 p-6 shadow-xl text-center">
-                <div style="--hover-border: var(--brand-color);" class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-[var(--hover-border)] transition-colors duration-300 p-1 shadow-inner">
+            <div data-aos="fade-down" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-6 shadow-xl text-center">
+                <div class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-amber-400 transition-colors duration-300 p-1 shadow-inner">
                     <img 
                         src="./image/Ebisike Gloria Adaeze.png" 
                         alt="Ebisike Gloria Adaeze" 
@@ -895,10 +899,10 @@
                 </div>
                 <div class="mt-5 flex-grow flex flex-col justify-between px-2 pb-2">
                     <div>
-                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-[var(--brand-color)] transition-colors duration-300">
+                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
                             Ebisike Gloria Adaeze
                         </h3>
-                        <p style="color: var(--brand-color);" class="text-[10px] font-semibold uppercase tracking-wider mt-2">
+                        <p class="text-[10px] font-semibold uppercase tracking-wider text-amber-500 mt-2">
                             Director of Administration and Operations
                         </p>
                     </div>
@@ -906,8 +910,8 @@
             </div>
 
             <!-- Administrator 3 -->
-            <div data-aos="fade-down" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-all duration-300 p-6 shadow-xl text-center">
-                <div style="--hover-border: var(--brand-color);" class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-[var(--hover-border)] transition-colors duration-300 p-1 shadow-inner">
+            <div data-aos="fade-down" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-6 shadow-xl text-center">
+                <div class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-amber-400 transition-colors duration-300 p-1 shadow-inner">
                     <img 
                         src="./image/Director of Academic Training.jpeg" 
                         alt="OMARA BOB MAVINE" 
@@ -917,10 +921,10 @@
                 </div>
                 <div class="mt-5 flex-grow flex flex-col justify-between px-2 pb-2">
                     <div>
-                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-[var(--brand-color)] transition-colors duration-300">
+                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
                             OMARA BOB MAVINE
                         </h3>
-                        <p style="color: var(--brand-color);" class="text-[10px] font-semibold uppercase tracking-wider mt-2">
+                        <p class="text-[10px] font-semibold uppercase tracking-wider text-amber-500 mt-2">
                             Director of Academic Training
                         </p>
                     </div>
@@ -928,8 +932,8 @@
             </div>
 
             <!-- Administrator 4 -->
-            <div data-aos="fade-up" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-all duration-300 p-6 shadow-xl text-center">
-                <div style="--hover-border: var(--brand-color);" class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-[var(--hover-border)] transition-colors duration-300 p-1 shadow-inner">
+            <div data-aos="fade-up" class="group flex flex-col items-center bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-400/40 transition-all duration-300 p-6 shadow-xl text-center">
+                <div class="w-40 h-40 rounded-full bg-slate-950 overflow-hidden border-2 border-slate-800 group-hover:border-amber-400 transition-colors duration-300 p-1 shadow-inner">
                     <img 
                         src="./image/Uwakwe Emmanuel Chidera.png" 
                         alt="Dr. Uwakwe Emmanuel Chidera" 
@@ -939,10 +943,10 @@
                 </div>
                 <div class="mt-5 flex-grow flex flex-col justify-between px-2 pb-2">
                     <div>
-                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-[var(--brand-color)] transition-colors duration-300">
+                        <h3 class="text-base font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors duration-300">
                             Dr. Uwakwe Emmanuel Chidera
                         </h3>
-                        <p style="color: var(--brand-color);" class="text-[10px] font-semibold uppercase tracking-wider mt-2">
+                        <p class="text-[10px] font-semibold uppercase tracking-wider text-amber-500 mt-2">
                             Director of Communication and Media
                         </p>
                     </div>
@@ -960,7 +964,7 @@
         
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span data-aos="fade-down" style="background-color: color-mix(in srgb, var(--brand-color) 15%, transparent); color: var(--brand-color); border-color: color-mix(in srgb, var(--brand-color) 30%, transparent);" class="inline-block border rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
+            <span data-aos="fade-down" class="inline-block bg-amber-400/15 text-amber-600 border border-amber-400/30 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider mb-3">
                 Impact & Transformations
             </span>
             <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 uppercase">
@@ -975,18 +979,18 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             
             <!-- Testimonial 1: Lubangakene Emmanuel -->
-            <div data-aos="fade-up" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
+            <div data-aos="fade-up" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-400/50 hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
                 <div>
                     <!-- Star Rating & Quote Icon -->
                     <div class="flex items-center justify-between mb-4">
-                        <div style="color: var(--brand-color);" class="flex items-center gap-1 text-xs">
+                        <div class="flex items-center gap-1 text-amber-500 text-xs">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-colors text-xl"></i>
+                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-amber-500/40 transition-colors text-xl"></i>
                     </div>
                     <p class="text-slate-700 text-xs sm:text-sm leading-relaxed font-normal mb-6">
                         "G12 stretched my capacity and killed excuses. I gained financial stewardship, emotional intelligence, and practical tools to lead proactively with clarity and confidence."
@@ -994,28 +998,28 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-                    <div style="color: var(--brand-color);" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-sm">
+                    <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
                         LE
                     </div>
                     <div>
-                        <h4 style="" class="text-sm font-bold text-slate-900 group-hover:text-[var(--brand-color)] transition-colors">Lubangakene Emmanuel</h4>
+                        <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Lubangakene Emmanuel</h4>
                         <p class="text-[10px] text-slate-500 font-medium">G12 Graduate</p>
                     </div>
                 </div>
             </div>
 
             <!-- Testimonial 2: BOB MAVINE -->
-            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-400/50 hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <div style="color: var(--brand-color);" class="flex items-center gap-1 text-xs">
+                        <div class="flex items-center gap-1 text-amber-500 text-xs">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-colors text-xl"></i>
+                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-amber-500/40 transition-colors text-xl"></i>
                     </div>
                     <p class="text-slate-700 text-xs sm:text-sm leading-relaxed font-normal mb-6">
                         "G12 equipped me with core leadership skills that radically transformed my influence. It pushed me into intentional self-discipline and personal development."
@@ -1023,28 +1027,28 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-                    <div style="color: var(--brand-color);" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-sm">
+                    <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
                         BM
                     </div>
                     <div>
-                        <h4 style="" class="text-sm font-bold text-slate-900 group-hover:text-[var(--brand-color)] transition-colors">BOB MAVINE</h4>
+                        <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition-colors">BOB MAVINE</h4>
                         <p class="text-[10px] text-slate-500 font-medium">Leadership Alumni</p>
                     </div>
                 </div>
             </div>
 
             <!-- Testimonial 3 -->
-            <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-400/50 hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <div style="color: var(--brand-color);" class="flex items-center gap-1 text-xs">
+                        <div class="flex items-center gap-1 text-amber-500 text-xs">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-colors text-xl"></i>
+                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-amber-500/40 transition-colors text-xl"></i>
                     </div>
                     <p class="text-slate-700 text-xs sm:text-sm leading-relaxed font-normal mb-6">
                         "Finding purpose alignment here changed my trajectory. The blend of spiritual discipline and strategic capacity is unmatched."
@@ -1052,28 +1056,28 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-                    <div style="color: var(--brand-color);" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-sm">
+                    <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
                         CN
                     </div>
                     <div>
-                        <h4 style="" class="text-sm font-bold text-slate-900 group-hover:text-[var(--brand-color)] transition-colors">Chidi Nwachukwu</h4>
+                        <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Chidi Nwachukwu</h4>
                         <p class="text-[10px] text-slate-500 font-medium">Community Director</p>
                     </div>
                 </div>
             </div>
 
             <!-- Testimonial 4 -->
-            <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[color-mix(in_srgb,var(--brand-color)_50%,transparent)] hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-400/50 hover:shadow-2xl transition-all duration-300 shadow-sm flex flex-col justify-between group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <div style="color: var(--brand-color);" class="flex items-center gap-1 text-xs">
+                        <div class="flex items-center gap-1 text-amber-500 text-xs">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-[color-mix(in_srgb,var(--brand-color)_40%,transparent)] transition-colors text-xl"></i>
+                        <i class="fa-solid fa-quote-right text-slate-300 group-hover:text-amber-500/40 transition-colors text-xl"></i>
                     </div>
                     <p class="text-slate-700 text-xs sm:text-sm leading-relaxed font-normal mb-6">
                         "The emphasis on character, integrity, and peer accountability creates a space where real, high-impact leaders are actually forged."
@@ -1081,11 +1085,11 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-                    <div style="color: var(--brand-color);" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-sm">
+                    <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
                         FA
                     </div>
                     <div>
-                        <h4 style="" class="text-sm font-bold text-slate-900 group-hover:text-[var(--brand-color)] transition-colors">Faith Adebayo</h4>
+                        <h4 class="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Faith Adebayo</h4>
                         <p class="text-[10px] text-slate-500 font-medium">Operations Lead</p>
                     </div>
                 </div>
@@ -1101,26 +1105,26 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-1 md:col-span-1">
                 <div class="flex items-center gap-2 mb-6">
-                    <span class="text-xl font-black tracking-wider text-white">G12 <span style="color: var(--brand-color);">INSTITUTE</span></span>
+                    <span class="text-xl font-black tracking-wider text-white">G12 <span class="text-amber-400">INSTITUTE</span></span>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed font-light">Building capacity-driven individuals and sustainable systems that outlive trends to create lasting social, economic, and spiritual transformation.</p>
             </div>
             <div>
                 <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">The Blueprint</h4>
                 <ul class="text-slate-400 space-y-4 text-sm font-light">
-                    <li><a href="#about" class="hover:text-[var(--brand-color)] transition">Our Mission</a></li>
-                    <li><a href="#pillars" class="hover:text-[var(--brand-color)] transition">Core Pillars</a></li>
-                    <li><a href="#system" class="hover:text-[var(--brand-color)] transition">The System</a></li>
-                    <li><a href="#founder" class="hover:text-[var(--brand-color)] transition">The Visionary</a></li>
+                    <li><a href="#about" class="hover:text-amber-400 transition">Our Mission</a></li>
+                    <li><a href="#pillars" class="hover:text-amber-400 transition">Core Pillars</a></li>
+                    <li><a href="#system" class="hover:text-amber-400 transition">The System</a></li>
+                    <li><a href="#founder" class="hover:text-amber-400 transition">The Visionary</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">Integrations</h4>
                 <ul class="text-slate-400 space-y-4 text-sm font-light">
-                    <li><a href="#join" class="hover:text-[var(--brand-color)] transition">Join Ecosystem</a></li>
-                    <li><a href="mailto:instituteg17@gmail.com" class="hover:text-[var(--brand-color)] transition">Email</a></li>
-                    <li><a href="tel:09035466348" class="hover:text-[var(--brand-color)] transition">Contact Support</a></li>
+                    <li><a href="#join" class="hover:text-amber-400 transition">Join Ecosystem</a></li>
+                    <li><a href="mailto:instituteg17@gmail.com" class="hover:text-amber-400 transition">Email</a></li>
+                    <li><a href="tel:09035466348" class="hover:text-amber-400 transition">Contact Support</a></li>
                     <li>
   <a href="https://wa.me/2349035466348" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-full shadow-md hover:shadow-emerald-600/20 hover:-translate-y-0.5 transition-all duration-300 w-fit">
     <i class="fa-brands fa-whatsapp text-sm sm:text-base"></i>
@@ -1133,15 +1137,15 @@
                 <h4 class="font-bold mb-6 text-sm uppercase tracking-wider text-slate-200">System Dispatch</h4>
                 <p class="text-slate-400 text-xs mb-3 font-light">Subscribe to receive strategic insight updates and operational cohort announcements.</p>
                 <div class="flex gap-2">
-                    <input type="email" placeholder="Email address" style="--focus-border: var(--brand-color);" class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg text-sm focus:outline-none focus:border-[var(--focus-border)] w-full text-white">
-                    <button style="background-color: var(--brand-color);" class="hover:opacity-90 transition px-4 rounded-lg text-slate-950 flex items-center justify-center">
+                    <input type="email" placeholder="Email address" class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg text-sm focus:outline-none focus:border-amber-400 w-full text-white">
+                    <button class="bg-amber-400 hover:bg-amber-500 transition px-4 rounded-lg text-slate-950 flex items-center justify-center">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                 </div>
             </div>
         </div>
         <div class="text-center text-slate-400 text-xs border-t border-slate-900/60 pt-10">
-    © <span id="current-year"></span> G12 Institute. All Rights Reserved. Engineered by <a href="https://nwambekeifeanyi.github.io/ifeanyicodes/" class="text-slate-400 hover:text-[var(--brand-color)] font-medium transition">Ifeanyi Codes</a>
+    © <span id="current-year"></span> G12 Institute. All Rights Reserved. Engineered by <a href="https://nwambekeifeanyi.github.io/ifeanyicodes/" class="text-slate-400 hover:text-amber-400 font-medium transition">Ifeanyi Codes</a>
 </div>
     </footer>
 
